@@ -1,14 +1,12 @@
 #!/usr/local/bin/ruby -w
 
-require 'test/unit/testresult'
-require 'test/unit/testcase'
-load '../../ZenWeb/dev/zentestrunner.rb'
+require 'test/unit'
 
 require 'range.rb'
 require 'tuple.rb'
 
 class TestRange < Test::Unit::TestCase
-  def set_up
+  def setup
     @a = [ "a", "b", "c", "d", "e" ]
   end
 
@@ -86,9 +84,5 @@ class TestTuple < Test::Unit::TestCase
     end
   end
 
-end
-
-if __FILE__ == $0 then
-  run_all_tests_with(ZenTestRunner) 
 end
 
