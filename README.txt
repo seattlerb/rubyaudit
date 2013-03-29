@@ -15,7 +15,7 @@ FEATURES/PROBLEMS:
 + Range (python) - allows for a skip values
 + more to come, see the URL above.
 
-SYNOPSYS:
+SYNOPSIS:
 
   t = Tuple.new("something", 2, 3)
   => ["something", 2, 3]
